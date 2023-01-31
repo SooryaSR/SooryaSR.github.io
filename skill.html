@@ -5,7 +5,7 @@
 	<style type="text/css">
 		body{
 
-		 font-family:  Berlin Sans FB;
+		 font-family: Georgia;
 			background-color: black;
 			color:#daa520 ;
 			text-align: center;
@@ -24,19 +24,66 @@
 	p{
 		color:#dcdcdc;
 	}
-div{
-border:2px solid;
-width:300px;
-height:250px;
 
+.abou{
+  position: relative;
+  width:100%;
+  height:100%
+  color:white;
+}
+nav{
+  display:flex;
+  width: 84%;
+  margin: auto;
+  padding:20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+nav ul,li{
+  display: inline-block;
+  list-style: none;
+  margin:10px 19px;
+}
+nav ul,li,a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+ul,li,nav a:hover{
+  color:grey;
+} 
+.skill,.pass,.hobbie
+{
+	 border:2px solid #daa520;
+ 
+  width: 15rem;
+  height: 16rem;
+  margin: 20px;
+}
+.container
+{
+	  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 
 	</style>
 </head>
-<body>
-	<center><img src="img/fvf.png" height="80" width="80"></center>
-	<center><div><h3><u>SKILLS</u></h3>
+<body><div class="abou">
+	<nav>
+		<ul><li><u><a href="index.html">Home</a></u></a></li>
+			<li><u><a href="personal.html">About</a></u></a></li>
+			<li><u><a href="edu.html">Qualification</a></u></li>
+			<li><u><a href="skill.html">Skills & Interests</a></u></li>
+			<li><u><a href="contact.html">Contact</a></u></li>
+</ul></nav>
+
+	<center><img src="img/skills.jpg" height="80" width="80"></center><br><br>
+
+	<div class="container"><div class="skill">
+	<h3><u>SKILLS</u></h3>
 		<p><h5>Hardworking<br><br>
 		Creativity<br><br>
 		Teamwork<br><br>
@@ -44,14 +91,15 @@ height:250px;
 		Time management</h5></p></div>
 
 <br>
-	<div><h3><u>PASSION</u></h3><br>
+<div class="pass">
+	<h3><u>PASSION</u></h3><br>
 	<p><h5>Drawing<br><br>
 	   Travelling<br></h5>
 	   </p></div>	
 
 <br>
-
-<div><h3><u>HOBBIES</u></h3>
+<div class="hobbie">
+<h3><u>HOBBIES</u></h3>
 	<p><h5>Reading<br><br>
 	   Illustrating<br><br>
 	   Gaming<br><br>
@@ -59,14 +107,6 @@ height:250px;
 	   Watching Cricket<br><br>
 	   Watcing Web series<br></h5></p></div>
 	   
-	   <br>
-
-
-
-
-
-
-
-</center>
+</div>	
 </body>
 </html>
